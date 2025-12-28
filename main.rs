@@ -317,10 +317,9 @@
 use std::io;
 
 fn main(){
-    
-let a  = (1.0/5.0_f64.sqrt())*((1.0 + 5.0_f64.sqrt())/2.0);
+    println!("nth term: ");
+let o = 1.0/5.0_f64.sqrt();
 
-let b = (1.0/5.0_f64.sqrt())*((1.0 - 5.0_f64.sqrt())/2.0);
 
     let mut n  = String::new();
 
@@ -330,9 +329,9 @@ let b = (1.0/5.0_f64.sqrt())*((1.0 - 5.0_f64.sqrt())/2.0);
 
 let n :i32 = n.trim().parse().expect("Successfully generated the nth term of the Fibonacci sequence");
 
-if n >=2 {
+if  n >=0 {
     
-let fibonacci = a*(((1.0 + 5.0_f64.sqrt())/2.0).powi(n)) + b*(((1.0 - 5.0_f64.sqrt())/2.0)).powi(n);
+let fibonacci = o*((((1.0 + 5.0_f64.sqrt())/2.0).powi(n)) - (((1.0 - 5.0_f64.sqrt())/2.0)).powi(n));
 
 println!("Here is the {n}th term of the fibonacci sequence :{fibonacci}")
 }
