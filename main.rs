@@ -314,28 +314,31 @@
 //Fn = Fn-1 + Fn-2
 
 // where:
-use std::io;
+// use std::io;
 
-fn main(){
-    println!("nth term: ");
-let o = 1.0/5.0_f64.sqrt();
+// fn main(){
+//     println!("nth term: ");
+// let o = 1.0/5.0_f64.sqrt();
 
 
-    let mut n  = String::new();
+//     let mut n  = String::new();
 
-    io::stdin()
-    .read_line(& mut n).expect("Failed to read nth term");
+//     io::stdin()
+//     .read_line(& mut n).expect("Failed to read nth term");
    
 
-let n :i32 = n.trim().parse().expect("Successfully generated the nth term of the Fibonacci sequence");
+// let n :i32 = n.trim().parse().expect("Successfully generated the nth term of the Fibonacci sequence");
 
-if  n >=0 {
+// if  n >=0 {
     
-let fibonacci = o*((((1.0 + 5.0_f64.sqrt())/2.0).powi(n)) - (((1.0 - 5.0_f64.sqrt())/2.0)).powi(n));
+// let fibonacci = o*((((1.0 + 5.0_f64.sqrt())/2.0).powi(n)) - (((1.0 - 5.0_f64.sqrt())/2.0)).powi(n));
 
-println!("Here is the {n}th term of the fibonacci sequence :{fibonacci}")
-}
-}
+// println!("Here is the {n}th term of the fibonacci sequence :{fibonacci}")
+// }
+// if n < 0{
+//     println!("Accepting only positive numbers no negative inputs")
+// }
+// }
 
 
 
