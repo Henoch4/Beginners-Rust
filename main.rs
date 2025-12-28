@@ -314,10 +314,33 @@
 //Fn = Fn-1 + Fn-2
 
 // where:
+use std::io;
 
-// F0 = 0 (first term)
+fn main(){
+    
+let a  = (1.0/5.0_f64.sqrt())*((1.0 + 5.0_f64.sqrt())/2.0);
 
-// F1 = 1 (second term)
+let b = (1.0/5.0_f64.sqrt())*((1.0 - 5.0_f64.sqrt())/2.0);
 
-// Fn is the nth term
+    let mut n  = String::new();
 
+    io::stdin()
+    .read_line(& mut n).expect("Failed to read nth term");
+   
+
+let n :i32 = n.trim().parse().expect("Successfully generated the nth term of the Fibonacci sequence");
+
+if n >=2 {
+    
+let fibonacci = a*(((1.0 + 5.0_f64.sqrt())/2.0).powi(n)) + b*(((1.0 - 5.0_f64.sqrt())/2.0)).powi(n);
+
+println!("Here is the {n}th term of the fibonacci sequence :{fibonacci}")
+}
+}
+
+
+
+
+
+
+// Print the lyrics to the Christmas carol "The twelve days of Christmas" , taking advantage of the repetition of the song;
